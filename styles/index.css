@@ -1,121 +1,140 @@
-body {
-    max-width: 1440px;
-    width: 100%;
-    min-height: auto;
-    margin: auto;
-    padding: 10px;
-    background-color: rgb(248, 248, 236);
-}
-
 /* ---- NAV BAR ----- */
-
 .container-xxl {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
-.navbar-brand /* (h2) */{
-    font-family: 'Baloo 2', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: -0.25px;
-    text-align: left;
-    margin-left: 20px;
+.navbar-brand {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.25px;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .nav-link {
-    color: rgb(0, 0, 0);
-    margin-left: 10px;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0px;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
+  color: rgb(0, 0, 0);
+  margin-left: 10px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
 }
 
 .nav-link:hover {
-    background-color: rgb(252, 224, 224, 0.8);
-    border-radius: 10px;
-    cursor: pointer;
+  background-color: rgba(252, 224, 224, 0.8);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .navbar-toggle, .navbar-toggle-icon {
-    background-color: rgb(248, 248, 236);
-    color: rgb(0, 0, 0);
-    border: none;
-    display: none;
+  background-color: rgb(248, 248, 236);
+  color: rgb(0, 0, 0);
+  border: none;
+  display: none;
 }
 
-/* ---- MAIN CONTENT ----- */
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-around;
-    margin: auto;
-    padding: 10px;
+.home-col {
+  max-height: 275px;
+  margin: 10px;
 }
 
-h1 { 
-    font-family: 'Poppins', sans-serif;
-    font-size: 75px;
-    font-weight: 500;
-    line-height: 102px;
-    letter-spacing: -2px;
-    text-align: center;
-    margin-bottom: 0;
+.home-row {
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-p { 
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 33px;
-    letter-spacing: 0px;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    text-align: center;
+/* ----- Korean food ---- */
+.k-card-img-top {
+  min-width: auto;
+  max-width: auto;
+  max-height: 300px;
+  overflow: hidden;
 }
-
-.container-p {
-    max-width: 50%;
-    margin: auto;
-}
-
-.col /* img */ {
-    max-height: 275px;    
-    margin: 10px;
-}
-
-.row /*img-container*/ {
-    max-width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 
 /* ---- MEDIA QUERIES ---- */
-
+/* Medium screen (tablet) */
+/* ---- general styling (ALL PAGES ) ---- */
 @media screen and (max-width: 768px) {
-    .navbar-nav {
-        background-color: rgb(252, 224, 224, 0.5);
-    }
-    h1 {
-        font-size: 52px;
-    }
-    .row {
-        flex-direction: column;
-    }
-    .navbar-toggle, .navbar-toggle-icon {
-        display: inline-block;
-    }
+  .navbar-nav {
+    background-color: rgba(252, 224, 224, 0.5);
+  }
+  .main-h {
+    font-size: 52px;
+  }
+  .navbar-toggle, .navbar-toggle-icon {
+    display: inline-block;
+  }
+  /* ---- Styling (HOME) ---- */
+  .home-row, .row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+/* Mobile screen */
+/* ---- general styling (ALL PAGES ) ---- */
+@media screen and (max-width: 479px) {
+  .main-h {
+    font-size: 36px;
+  }
+}
+/* ---- GENERAL/MAIN STYLING ----- */
+body {
+  max-width: 1440px;
+  width: 100%;
+  min-height: auto;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(248, 248, 236);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  margin: auto;
+  padding: 10px;
+}
+
+.main-h {
+  font-family: "Poppins", sans-serif;
+  font-size: 75px;
+  font-weight: 500;
+  line-height: 102px;
+  letter-spacing: -2px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main-p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.main-container-p {
+  max-width: 50%;
+  margin: auto;
+}
+
+.card-title, .card-text {
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */

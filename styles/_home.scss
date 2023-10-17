@@ -1,0 +1,16 @@
+
+
+
+.home-col /* img */ {
+    max-height: 275px;    
+    margin: 10px;
+}
+
+.home-row /*img-container*/ {
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,45 @@
+
+/* ---- NAV BAR ----- */
+
+.container-xxl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar-brand /* (h2) */{
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    background-color: rgb(252, 224, 224, 0.8);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar-toggle, .navbar-toggle-icon {
+    background-color: rgb(248, 248, 236);
+    color: rgb(0, 0, 0);
+    border: none;
+    display: none;
+}
